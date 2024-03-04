@@ -1,0 +1,74 @@
+@mixin button($theme: $button, $text: black) {
+  background: $theme;
+  padding: 10px;
+  text-transform: uppercase;
+  min-width: 150px;
+  width: fit-content;
+  border: 0;
+  border-radius: 999px;
+  color: $text;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.menu-mobile {
+  position: relative;
+  nav {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    background-color: #fff;
+    width: 250px;
+    padding: 20px;
+
+    box-shadow: #000 -16px -1px 20px 9px;
+    transition: left 1s ease-out;
+    &.open {
+      left: 0;
+    }
+    div.list-container {
+      position: relative;
+      ul.menu-mobile-list {
+        padding: 0;
+        margin: 0;
+        height: 120px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        li.menu-mobile-item {
+          list-style: none;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+      img#close-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+  .header-mobile {
+    .header-actions {
+      .box {
+        @include button;
+      }
+    }
+  }
+}
