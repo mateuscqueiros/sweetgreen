@@ -4,8 +4,8 @@
 
     "module": "commonjs",
 
-    "rootDir": "./src/assets/scripts/ts",
-    "outDir": "./src/assets/scripts/js",
+    "rootDir": "src/assets/scripts/ts",
+    "outDir": "src/assets/scripts/js",
 
     "noEmitOnError": false,
     "esModuleInterop": true,

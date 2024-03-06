@@ -3,21 +3,114 @@
   font-weight: 400;
   src: url("../fonts/GFS_Didot/GFSDidot-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/Robot/Roboto-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  src: url("../fonts/Robot/Roboto-ThinItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Robot/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/Robot/Roboto-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Robot/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/Robot/Roboto-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Robot/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  src: url("../fonts/Robot/Roboto-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Robot/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/Robot/Roboto-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/Robot/Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  src: url("../fonts/Robot/Roboto-BlackItalic.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: #f4f3e9;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 0;
+  <<<<<<< HEAD font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  =======font-size: 1rem;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  >>>>>>>master padding: 0;
   margin: 0;
   min-height: 100vh;
 }
 
-.menu-mobile {
+<<<<<<< HEAD=======button {
+  font-family: Roboto;
+  font-size: 1rem;
+}
+
+>>>>>>>master .menu-mobile {
   position: relative;
 }
+
 .menu-mobile nav {
   position: absolute;
   top: 0;
@@ -26,44 +119,125 @@ body {
   background-color: #fff;
   width: 250px;
   padding: 20px;
-  box-shadow: #000 -16px -1px 20px 9px;
+  <<<<<<< HEAD box-shadow: #000 -16px -1px 20px 9px;
   transition: left 1s ease-out;
+  =======z-index: 1;
+  box-shadow: #000 -16px -1px 20px 9px;
+  transition: left 0.4s ease-out;
+  >>>>>>>master
 }
+
 .menu-mobile nav.open {
   left: 0;
 }
-.menu-mobile nav div.list-container {
+
+<<<<<<< HEAD .menu-mobile nav div.list-container {
   position: relative;
 }
-.menu-mobile nav div.list-container ul.menu-mobile-list {
-  padding: 0;
-  margin: 0;
-  height: 120px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.menu-mobile nav div.list-container ul.menu-mobile-list li.menu-mobile-item {
-  list-style: none;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.menu-mobile nav div.list-container img#close-menu {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.menu-mobile .header-mobile .header-actions .box {
-  background: #eefc7e;
-  padding: 10px;
-  text-transform: uppercase;
-  min-width: 150px;
-  width: fit-content;
-  border: 0;
-  border-radius: 999px;
-  color: black;
-  cursor: pointer;
-  font-weight: 500;
-}
 
-/*# sourceMappingURL=index.css.map */
+.menu-mobile nav div.list-container ul.menu-mobile-list {
+  =======.menu-mobile nav .list-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu-mobile nav .list-container ul.menu-mobile-list {
+    >>>>>>>master padding: 0;
+    margin: 0;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  <<<<<<< HEAD .menu-mobile nav div.list-container ul.menu-mobile-list li.menu-mobile-item {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .menu-mobile nav div.list-container img#close-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu-mobile .header-mobile .header-actions .box {
+    background: #eefc7e;
+    padding: 10px;
+    text-transform: uppercase;
+    min-width: 150px;
+    width: fit-content;
+    border: 0;
+    border-radius: 999px;
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+
+    .menu-mobile nav .list-container ul.menu-mobile-list li.menu-mobile-item {
+      list-style: none;
+      text-transform: uppercase;
+    }
+
+    .menu-mobile nav .list-container img#close-menu {
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+    }
+
+    .menu-mobile nav .list-container .header-actions {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+    }
+
+    .menu-mobile .header-mobile {
+      position: relative;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-mobile .header-mobile img#open-menu {
+      position: absolute;
+      left: 20px;
+      cursor: pointer;
+    }
+
+    .action-primary {
+      background-color: #2b473e;
+      font-weight: 200;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 999px;
+      padding: 6px 20px;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .action-primary:hover {
+      opacity: 0.8;
+    }
+
+    .action-secondary {
+      background-color: transparent;
+      color: #2b473e;
+      font-weight: 200;
+      text-transform: uppercase;
+      border-radius: 999px;
+      padding: 6px 20px;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .action-secondary:hover {
+      background-color: lightgrey;
+      >>>>>>>master
+    }
+
+    /*# sourceMappingURL=index.css.map */
