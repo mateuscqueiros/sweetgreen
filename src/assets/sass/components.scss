@@ -39,3 +39,11 @@
     background-color: lightgrey;
   }
 }
+
+.action-primary {
+  @include action-primary;
+}
+
+.action-secondary {
+  @include action-secondary;
+}

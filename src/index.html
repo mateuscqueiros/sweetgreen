@@ -7,31 +7,36 @@
     <link rel="stylesheet" href="assets/styles/index.css" />
   </head>
   <body>
-    <header>
-      <div class="menu-mobile">
-        <nav>
-          <div class="list-container">
-            <ul class="menu-mobile-list">
-              <li class="menu-mobile-item">Our menu</li>
-              <li class="menu-mobile-item">Our mission</li>
-              <li class="menu-mobile-item">Outpost</li>
-            </ul>
-            <img id="close-menu" src="assets/icons/x.svg" alt="Close menu" />
-            <div class="header-actions">
-              <button type="button" id="sign-in" class="action-secondary">
-                Sign in
-              </button>
-              <button type="button" class="action-primary">Order</button>
-            </div>
+    <header class="menu">
+      <nav>
+        <div class="list-container">
+          <ul class="menu-items-list">
+            <li class="menu-item">Our menu</li>
+            <li class="menu-item">Our mission</li>
+            <li class="menu-item">Outpost</li>
+          </ul>
+          <img id="close-menu" src="assets/icons/x.svg" alt="Close menu" />
+          <div class="header-actions">
+            <button type="button" id="sign-in" class="action-secondary">
+              Sign in
+            </button>
+            <button type="button" class="action-primary">Order</button>
           </div>
-        </nav>
-        <div class="header-mobile">
-          <img id="open-menu" src="assets/icons/menu-2.svg" alt="Open menu" />
-          <span>Sweetgreen</span>
         </div>
+      </nav>
+      <div class="header-fixed">
+        <img id="open-menu" src="assets/icons/menu-2.svg" alt="Open menu" />
+        <img src="assets/images/logo.svg" />
       </div>
-
-      <script src="assets/scripts/js/main.js"></script>
+      <div class="header-actions">
+        <button type="button" id="sign-in" class="action-secondary">
+          Sign in
+        </button>
+        <button type="button" class="action-primary">Order</button>
+      </div>
     </header>
+    <div class="home-banner"></div>
+
+    <script src="assets/scripts/js/main.js"></script>
   </body>
 </html>
