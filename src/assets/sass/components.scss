@@ -25,6 +25,10 @@
   }
 }
 
+.action-primary {
+  @include action-primary;
+}
+
 @mixin action-secondary() {
   background-color: transparent;
   color: $header-text;
@@ -38,4 +42,8 @@
   &:hover {
     background-color: lightgrey;
   }
+}
+
+.action-secondary {
+  @include action-secondary;
 }
