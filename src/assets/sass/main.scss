@@ -88,8 +88,45 @@ header.menu {
   .header-actions-desktop {
     display: none;
   }
-  @media (min-width: 992px) {
-    /* Começar aqui */
+  @media (min-width: $breakpoint_md) {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    nav {
+      background-color: transparent;
+      box-shadow: unset;
+      position: static;
+      width: fit-content;
+      height: unset;
+      padding: 0;
+
+      .list-container {
+        .header-actions-mobile {
+          display: none;
+        }
+        ul.menu-items-list {
+          height: unset;
+
+          flex-direction: row;
+          li.menu-item {
+          }
+        }
+      }
+      img#close-menu {
+        display: none;
+      }
+    }
+    .header-fixed {
+      padding: 0;
+      img#open-menu {
+        display: none;
+      }
+    }
+    .header-actions-desktop {
+      display: flex;
+    }
   }
 }
 

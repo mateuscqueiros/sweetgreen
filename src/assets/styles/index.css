@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Didot";
   font-weight: 400;
@@ -157,9 +156,39 @@ header.menu .header-fixed img#open-menu {
 header.menu .header-actions-desktop {
   display: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
   header.menu {
-    /* Começar aqui */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header.menu nav {
+    background-color: transparent;
+    box-shadow: unset;
+    position: static;
+    width: fit-content;
+    height: unset;
+    padding: 0;
+  }
+  header.menu nav .list-container .header-actions-mobile {
+    display: none;
+  }
+  header.menu nav .list-container ul.menu-items-list {
+    height: unset;
+    flex-direction: row;
+  }
+  header.menu nav img#close-menu {
+    display: none;
+  }
+  header.menu .header-fixed {
+    padding: 0;
+  }
+  header.menu .header-fixed img#open-menu {
+    display: none;
+  }
+  header.menu .header-actions-desktop {
+    display: flex;
   }
 }
 
