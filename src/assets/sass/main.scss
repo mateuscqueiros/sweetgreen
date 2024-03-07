@@ -152,17 +152,38 @@ section#home-banner {
     position: absolute;
     height: 100%;
     width: 100%;
-    filter: brightness(80%);
 
+    filter: brightness(80%);
     background-image: url("../images/banner.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
+  .banner-content {
+    position: relative;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
 
-  .banner-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    .banner-info {
+      color: #fff;
+      span {
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+      h1 {
+        margin: 1rem 0;
+        font-weight: 300;
+        font-size: 3rem;
+        width: 370px;
+        line-height: 3.5rem;
+        @media (min-width: $breakpoint_sm) {
+          font-size: 4rem;
+        }
+      }
+    }
   }
 }

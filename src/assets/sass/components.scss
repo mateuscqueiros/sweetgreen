@@ -27,7 +27,7 @@
 
 @mixin action-primary() {
   background-color: $header-text;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   color: #fff;
   border-radius: 999px;
@@ -47,7 +47,7 @@
 @mixin action-secondary() {
   background-color: transparent;
   color: $header-text;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   border-radius: 999px;
   padding: 6px 20px;

@@ -4,73 +4,73 @@
   src: url("../fonts/GFS_Didot/GFSDidot-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 100;
   font-style: normal;
-  src: url("../fonts/Robot/Roboto-Thin.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 100;
   font-style: italic;
-  src: url("../fonts/Robot/Roboto-ThinItalic.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-ThinItalic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 300;
   font-style: normal;
-  src: url("../fonts/Robot/Roboto-Light.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 300;
   font-style: italic;
-  src: url("../fonts/Robot/Roboto-LightItalic.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-LightItalic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/Robot/Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 400;
   font-style: italic;
-  src: url("../fonts/Robot/Roboto-Italic.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-Italic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 500;
   font-style: normal;
-  src: url("../fonts/Robot/Roboto-Medium.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 500;
   font-style: italic;
-  src: url("../fonts/Robot/Roboto-MediumItalic.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 700;
   font-style: normal;
-  src: url("../fonts/Robot/Roboto-Bold.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 700;
   font-style: italic;
-  src: url("../fonts/Robot/Roboto-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 900;
   font-style: normal;
   src: url("../fonts/Robot/Roboto-Black.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-weight: 900;
   font-style: italic;
   src: url("../fonts/Robot/Roboto-BlackItalic.ttf") format("truetype");
@@ -98,7 +98,7 @@
 
 .action-primary {
   background-color: #2b473e;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   color: #fff;
   border-radius: 999px;
@@ -113,7 +113,7 @@
 .action-secondary {
   background-color: transparent;
   color: #2b473e;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   border-radius: 999px;
   padding: 6px 20px;
@@ -267,10 +267,33 @@ section#home-banner .banner-image {
   background-position: center;
   background-size: cover;
 }
-section#home-banner .banner-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+section#home-banner .banner-content {
+  position: relative;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+section#home-banner .banner-content .banner-info {
+  color: #fff;
+}
+section#home-banner .banner-content .banner-info span {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+section#home-banner .banner-content .banner-info h1 {
+  margin: 1rem 0;
+  font-weight: 300;
+  font-size: 3rem;
+  width: 370px;
+  line-height: 3.5rem;
+}
+@media (min-width: 48rem) {
+  section#home-banner .banner-content .banner-info h1 {
+    font-size: 4rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
