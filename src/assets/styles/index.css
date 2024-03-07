@@ -75,6 +75,27 @@
   font-style: italic;
   src: url("../fonts/Robot/Roboto-BlackItalic.ttf") format("truetype");
 }
+.button {
+  background: #eefc7e;
+  padding: 16px;
+  text-transform: uppercase;
+  border-radius: 999px;
+  width: 150px;
+  border: 0;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button .icon {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 8px;
+}
+
 .action-primary {
   background-color: #2b473e;
   font-weight: 200;
@@ -223,6 +244,33 @@ header.menu .container .header-actions-desktop {
   header.menu .container .header-actions-desktop {
     display: flex;
   }
+}
+
+main {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+section#home-banner {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+section#home-banner .banner-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: brightness(80%);
+  background-image: url("../images/banner.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section#home-banner .banner-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

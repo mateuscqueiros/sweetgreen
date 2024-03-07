@@ -137,3 +137,32 @@ header.menu {
     }
   }
 }
+
+main {
+  width: 100%;
+  max-width: $content_width;
+  margin: 0 auto;
+}
+
+section#home-banner {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  .banner-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: brightness(80%);
+
+    background-image: url("../images/banner.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .banner-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
