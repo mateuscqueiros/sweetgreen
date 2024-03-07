@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Didot";
   font-weight: 400;
@@ -93,10 +94,10 @@ button {
   font-size: 1rem;
 }
 
-.menu-mobile {
+header.menu {
   position: relative;
 }
-.menu-mobile nav {
+header.menu nav {
   position: absolute;
   top: 0;
   left: -250px;
@@ -108,17 +109,17 @@ button {
   box-shadow: #000 -16px -1px 20px 9px;
   transition: left 0.4s ease-out;
 }
-.menu-mobile nav.open {
+header.menu nav.open {
   left: 0;
 }
-.menu-mobile nav .list-container {
+header.menu nav .list-container {
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.menu-mobile nav .list-container ul.menu-mobile-list {
+header.menu nav .list-container ul.menu-items-list {
   padding: 0;
   margin: 0;
   height: 120px;
@@ -126,32 +127,40 @@ button {
   justify-content: space-between;
   flex-direction: column;
 }
-.menu-mobile nav .list-container ul.menu-mobile-list li.menu-mobile-item {
+header.menu nav .list-container ul.menu-items-list li.menu-item {
   list-style: none;
   text-transform: uppercase;
 }
-.menu-mobile nav .list-container img#close-menu {
+header.menu nav .list-container img#close-menu {
   position: absolute;
   right: 0;
   top: 0;
   cursor: pointer;
 }
-.menu-mobile nav .list-container .header-actions {
+header.menu nav .list-container .header-actions-mobile {
   display: flex;
   width: 100%;
   gap: 20px;
 }
-.menu-mobile .header-mobile {
+header.menu .header-fixed {
   position: relative;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu-mobile .header-mobile img#open-menu {
+header.menu .header-fixed img#open-menu {
   position: absolute;
   left: 20px;
   cursor: pointer;
+}
+header.menu .header-actions-desktop {
+  display: none;
+}
+@media (min-width: 992px) {
+  header.menu {
+    /* Começar aqui */
+  }
 }
 
 .action-primary {
