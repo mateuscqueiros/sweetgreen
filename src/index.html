@@ -8,20 +8,32 @@
   </head>
   <body>
     <header class="menu">
-      <nav>
-        <div class="list-container">
-          <ul class="menu-items-list">
-            <li class="menu-item">Our menu</li>
-            <li class="menu-item">Our mission</li>
-            <li class="menu-item">Outpost</li>
-          </ul>
-          <img id="close-menu" src="assets/icons/x.svg" alt="Close menu" />
-          <div class="header-actions">
-            <button type="button" id="sign-in" class="action-secondary">
-              Sign in
-            </button>
-            <button type="button" class="action-primary">Order</button>
+      <div class="container">
+        <nav>
+          <div class="list-container">
+            <ul class="menu-items-list">
+              <li class="menu-item">Our menu</li>
+              <li class="menu-item">Our mission</li>
+              <li class="menu-item">Outpost</li>
+            </ul>
+            <img id="close-menu" src="assets/icons/x.svg" alt="Close menu" />
+            <div class="header-actions-mobile">
+              <button type="button" id="sign-in" class="action-secondary">
+                Sign in
+              </button>
+              <button type="button" class="action-primary">Order</button>
+            </div>
           </div>
+        </nav>
+        <div class="header-fixed">
+          <img id="open-menu" src="assets/icons/menu-2.svg" alt="Open menu" />
+          <img id="logo" src="assets/icons/logo.svg" />
+        </div>
+        <div class="header-actions-desktop">
+          <button type="button" id="sign-in" class="action-secondary">
+            Sign in
+          </button>
+          <button type="button" class="action-primary">Order</button>
         </div>
       </nav>
       <div class="header-fixed">
@@ -35,7 +47,26 @@
         <button type="button" class="action-primary">Order</button>
       </div>
     </header>
-    <div class="home-banner"></div>
+
+    <main>
+      <section id="home-banner">
+        <div class="banner-image"></div>
+        <div class="banner-content">
+          <div class="banner-info">
+            <span>New menu</span>
+            <h1>Now serving summer</h1>
+            <button type="button" class="button">
+              Order now
+              <img
+                class="icon"
+                src="assets/icons/arrow-right.svg"
+                alt="Arrow right"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="assets/scripts/js/main.js"></script>
   </body>

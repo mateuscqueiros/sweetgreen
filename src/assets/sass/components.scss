@@ -1,6 +1,6 @@
 @mixin button($background: $button, $text: black) {
   background: $background;
-  padding: 10px;
+  padding: 16px;
   text-transform: uppercase;
   border-radius: 999px;
   width: 150px;
@@ -8,11 +8,26 @@
   color: $text;
   cursor: pointer;
   font-weight: 500;
+  width: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 8px;
+  }
+}
+
+.button {
+  @include button;
 }
 
 @mixin action-primary() {
   background-color: $header-text;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   color: #fff;
   border-radius: 999px;
@@ -25,10 +40,14 @@
   }
 }
 
+.action-primary {
+  @include action-primary;
+}
+
 @mixin action-secondary() {
   background-color: transparent;
   color: $header-text;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   border-radius: 999px;
   padding: 6px 20px;
@@ -38,10 +57,6 @@
   &:hover {
     background-color: lightgrey;
   }
-}
-
-.action-primary {
-  @include action-primary;
 }
 
 .action-secondary {
