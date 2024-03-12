@@ -187,3 +187,53 @@ section#home-banner {
     }
   }
 }
+
+section#food-presentation {
+  .carousel-header {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    overflow: auto;
+
+    display: flex;
+    justify-content: center;
+    ul.food-classes {
+      margin: 0;
+      min-width: 450px;
+
+      display: flex;
+      justify-content: space-between;
+      li {
+        position: relative;
+        font-family: Didot;
+        font-size: 1.5rem;
+        list-style: none;
+        color: $faded_text;
+        &.active {
+          color: black;
+          &::after {
+            position: absolute;
+            content: "";
+            height: 5px;
+            width: 5px;
+            bottom: -5px;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 99px;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+  .carousel-content {
+    .tab-content {
+      .food-card {
+        .card-image {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

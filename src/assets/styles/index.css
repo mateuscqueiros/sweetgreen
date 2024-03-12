@@ -296,4 +296,42 @@ section#home-banner .banner-content .banner-info h1 {
   }
 }
 
+section#food-presentation .carousel-header {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+section#food-presentation .carousel-header ul.food-classes {
+  margin: 0;
+  min-width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+section#food-presentation .carousel-header ul.food-classes li {
+  position: relative;
+  font-family: Didot;
+  font-size: 1.5rem;
+  list-style: none;
+  color: #96958c;
+}
+section#food-presentation .carousel-header ul.food-classes li.active {
+  color: black;
+}
+section#food-presentation .carousel-header ul.food-classes li.active::after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 5px;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 99px;
+  background-color: black;
+}
+section#food-presentation .carousel-content .tab-content .food-card .card-image img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */

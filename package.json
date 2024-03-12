@@ -1,0 +1,16 @@
+{
+  "name": "sweetgreen",
+  "version": "1.0.0",
+  "description": "Sweetgreen",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/assets/sass/index.scss src/assets/styles/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}
