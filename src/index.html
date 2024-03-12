@@ -35,16 +35,6 @@
           </button>
           <button type="button" class="action-primary">Order</button>
         </div>
-      </nav>
-      <div class="header-fixed">
-        <img id="open-menu" src="assets/icons/menu-2.svg" alt="Open menu" />
-        <img src="assets/images/logo.svg" />
-      </div>
-      <div class="header-actions">
-        <button type="button" id="sign-in" class="action-secondary">
-          Sign in
-        </button>
-        <button type="button" class="action-primary">Order</button>
       </div>
     </header>
 
@@ -66,8 +56,81 @@
           </div>
         </div>
       </section>
+      <section id="food-presentation">
+        <div class="carousel-header">
+          <ul class="food-classes">
+            <li id="salads-button" class="active" data-content-id="0">
+              Salads
+            </li>
+            <li id="bowls-button" data-content-id="1">Warm Bowls</li>
+            <li id="sides-button" data-content-id="2">Sides</li>
+          </ul>
+        </div>
+        <div class="carousel-content">
+          <div class="tab-content active" id="salads-content">
+            <div class="food-card">
+              <div class="card-image">
+                <button class="button" type="button">Popular</button>
+                <img src="assets/images/kale-caesar.jpg" alt="Kale Caesar" />
+              </div>
+              <div class="card-content">
+                <h3>Kale Caesar</h3>
+                <p>
+                  Roasted chicken, tomatoes, parmesan crispes, shaved parmesan,
+                  shredded kale, chopped romaine, lime squeeze, caesar dressing
+                </p>
+                <div div class="order-button">
+                  <span class="text">Order now</span>
+                  <img src="assets/icons/arrow-right.svg" alt="Kale Caesar" />
+                </div>
+              </div>
+            </div>
+            <div class="food-card">
+              <div class="card-image">
+                <button class="button" type="button">Popular</button>
+                <img src="assets/images/kale-caesar.jpg" alt="Kale Caesar" />
+              </div>
+              <div class="card-content">
+                <h3>Kale Caesar</h3>
+                <p>
+                  Roasted chicken, tomatoes, parmesan crispes, shaved parmesan,
+                  shredded kale, chopped romaine, lime squeeze, caesar dressing
+                </p>
+                <div div class="order-button">
+                  <span class="text">Order now</span>
+                  <img src="assets/icons/arrow-right.svg" alt="Kale Caesar" />
+                </div>
+              </div>
+            </div>
+            <div class="food-card">
+              <div class="card-image">
+                <button class="button" type="button">Popular</button>
+                <img src="assets/images/kale-caesar.jpg" alt="Kale Caesar" />
+              </div>
+              <div class="card-content">
+                <h3>Kale Caesar</h3>
+                <p>
+                  Roasted chicken, tomatoes, parmesan crispes, shaved parmesan,
+                  shredded kale, chopped romaine, lime squeeze, caesar dressing
+                </p>
+                <div class="order-button">
+                  <span class="text">Order now</span>
+                  <img src="assets/icons/arrow-right.svg" alt="Kale Caesar" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="bowls-content">
+            <span>Bowls</span>
+          </div>
+          <div class="tab-content" id="sides-content">
+            <span>Sides</span>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="assets/scripts/js/main.js"></script>
+    <script src="assets/scripts/js/carousel.js"></script>
   </body>
 </html>

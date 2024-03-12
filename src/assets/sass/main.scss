@@ -178,10 +178,15 @@ section#home-banner {
         margin: 1rem 0;
         font-weight: 300;
         font-size: 3rem;
-        width: 370px;
+        width: unset;
         line-height: 3.5rem;
         @media (min-width: $breakpoint_sm) {
           font-size: 4rem;
+        }
+      }
+      @media (min-width: $breakpoint_md) {
+        h1 {
+          width: 370px;
         }
       }
     }
@@ -226,6 +231,113 @@ section#home-banner {
       display: flex;
       align-items: center;
       margin-right: 20px;
+    }
+  }
+}
+
+section#food-presentation {
+  margin-bottom: 5rem;
+  padding: 0 1rem;
+  @media (min-width: $breakpoint_md) {
+    padding: 0;
+    gap: 1rem;
+  }
+  .carousel-header {
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    overflow: auto;
+
+    display: flex;
+    justify-content: center;
+    ul.food-classes {
+      padding: 0;
+      margin: 0;
+      min-width: 450px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      @media (min-width: $breakpoint_md) {
+        gap: 3rem;
+      }
+
+      li {
+        position: relative;
+        font-family: Didot;
+        font-size: 1.8rem;
+        list-style-type: none;
+        color: $faded-text;
+        cursor: pointer;
+
+        &.active {
+          color: black;
+          &::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: black;
+            border-radius: 999px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translate(-50%);
+            transition: left 1s ease-out;
+          }
+        }
+        @media (min-width: $breakpoint_md) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+  .carousel-content {
+    .tab-content {
+      display: none;
+      &.active {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        @media (min-width: $breakpoint_md) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .food-card {
+        position: relative;
+        .card-image {
+          .button {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+
+            font-size: 0.75rem;
+            width: 100px;
+            height: 20px;
+          }
+          img {
+            width: 100%;
+            border-radius: 1rem;
+          }
+        }
+      }
+      .card-content {
+        h3 {
+          text-transform: uppercase;
+        }
+        .order-button {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          width: fit-content;
+          img {
+            margin-left: 6px;
+            height: 16px;
+            width: 16px;
+          }
+        }
+      }
     }
   }
 }

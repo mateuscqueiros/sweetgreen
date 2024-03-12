@@ -75,12 +75,6 @@
   font-style: italic;
   src: url("../fonts/Robot/Roboto-BlackItalic.ttf") format("truetype");
 }
-<<<<<<< HEAD
-.action-primary {
-  background-color: #2b473e;
-  font-weight: 200;
-  text-transform: uppercase;
-=======
 .button {
   background: #eefc7e;
   padding: 16px;
@@ -283,7 +277,6 @@ section#home-banner .banner-content {
   justify-content: flex-start;
 }
 section#home-banner .banner-content .banner-info {
->>>>>>> master
   color: #fff;
 }
 section#home-banner .banner-content .banner-info span {
@@ -294,7 +287,7 @@ section#home-banner .banner-content .banner-info h1 {
   margin: 1rem 0;
   font-weight: 300;
   font-size: 3rem;
-  width: 370px;
+  width: unset;
   line-height: 3.5rem;
 }
 @media (min-width: 48rem) {
@@ -302,134 +295,153 @@ section#home-banner .banner-content .banner-info h1 {
     font-size: 4rem;
   }
 }
-
-* {
-  box-sizing: border-box;
+@media (min-width: 62rem) {
+  section#home-banner .banner-content .banner-info h1 {
+    width: 370px;
+  }
 }
-
-body {
-  background-color: #f4f3e9;
-  font-size: 1rem;
-  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 0;
-  margin: 0;
-  min-height: 100vh;
-}
-
-button {
-  font-family: Roboto;
-  font-size: 1rem;
-}
-
-.menu {
-  position: relative;
-}
-.menu nav {
-  position: absolute;
-  top: 0;
-  left: -250px;
-  height: 100vh;
-  background-color: #fff;
-  width: 250px;
-  padding: 20px;
-  z-index: 1;
-  box-shadow: #000 -16px -1px 20px 9px;
-  transition: left 0.4s ease-out;
-}
-.menu nav.open {
-  left: 0;
-}
-.menu nav .list-container {
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.menu nav .list-container ul.menu-items-list {
-  padding: 0;
-  margin: 0;
-  height: 120px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.menu nav .list-container ul.menu-items-list li.menu-item {
-  list-style: none;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.menu nav .list-container img#close-menu {
-  position: absolute;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-}
-.menu nav .list-container .header-actions {
-  display: flex;
-  width: 100%;
-  gap: 20px;
-}
-.menu .header-fixed {
-  position: relative;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu .header-fixed img#open-menu {
-  position: absolute;
-  left: 20px;
-  cursor: pointer;
-}
-.menu .header-actions {
+section#home-banner .header-actions {
   display: none;
 }
 @media (min-width: 992px) {
-  .menu {
+  section#home-banner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .menu nav {
+  section#home-banner nav {
     position: static;
     background: none;
     box-shadow: none;
     width: fit-content;
     height: unset;
   }
-  .menu nav .list-container ul.menu-items-list {
+  section#home-banner nav .list-container ul.menu-items-list {
     display: flex;
     flex-direction: row;
     gap: 50px;
     height: unset;
   }
-  .menu nav .list-container img#close-menu {
+  section#home-banner nav .list-container img#close-menu {
     display: none;
   }
-  .menu nav .list-container .header-actions {
+  section#home-banner nav .list-container .header-actions {
     display: none;
   }
-  .menu .header-fixed {
+  section#home-banner .header-fixed {
     width: fit-content;
   }
-  .menu .header-fixed img#open-menu {
+  section#home-banner .header-fixed img#open-menu {
     display: none;
   }
-  .menu .header-actions {
+  section#home-banner .header-actions {
     display: flex;
     align-items: center;
     margin-right: 20px;
   }
 }
 
-.home-banner {
-  background: url("../images/banner.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+section#food-presentation {
+  margin-bottom: 5rem;
+  padding: 0 1rem;
+}
+@media (min-width: 62rem) {
+  section#food-presentation {
+    padding: 0;
+    gap: 1rem;
+  }
+}
+section#food-presentation .carousel-header {
   width: 100%;
-  height: 300px;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+section#food-presentation .carousel-header ul.food-classes {
+  padding: 0;
+  margin: 0;
+  min-width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (min-width: 62rem) {
+  section#food-presentation .carousel-header ul.food-classes {
+    gap: 3rem;
+  }
+}
+section#food-presentation .carousel-header ul.food-classes li {
+  position: relative;
+  font-family: Didot;
+  font-size: 1.8rem;
+  list-style-type: none;
+  color: #a0a096;
+  cursor: pointer;
+}
+section#food-presentation .carousel-header ul.food-classes li.active {
+  color: black;
+}
+section#food-presentation .carousel-header ul.food-classes li.active::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 999px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: left 1s ease-out;
+}
+@media (min-width: 62rem) {
+  section#food-presentation .carousel-header ul.food-classes li {
+    font-size: 2.5rem;
+  }
+}
+section#food-presentation .carousel-content .tab-content {
+  display: none;
+}
+section#food-presentation .carousel-content .tab-content.active {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+@media (min-width: 62rem) {
+  section#food-presentation .carousel-content .tab-content.active {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+section#food-presentation .carousel-content .tab-content .food-card {
+  position: relative;
+}
+section#food-presentation .carousel-content .tab-content .food-card .card-image .button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  width: 100px;
+  height: 20px;
+}
+section#food-presentation .carousel-content .tab-content .food-card .card-image img {
+  width: 100%;
+  border-radius: 1rem;
+}
+section#food-presentation .carousel-content .tab-content .card-content h3 {
+  text-transform: uppercase;
+}
+section#food-presentation .carousel-content .tab-content .card-content .order-button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: fit-content;
+}
+section#food-presentation .carousel-content .tab-content .card-content .order-button img {
+  margin-left: 6px;
+  height: 16px;
+  width: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */
