@@ -351,12 +351,15 @@ section#food-presentation .carousel-content {
   padding: 1rem;
 }
 section#food-presentation .carousel-content .tab-content {
+  display: none;
+}
+section#food-presentation .carousel-content .tab-content.active {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 3rem;
 }
 @media (min-width: 62rem) {
-  section#food-presentation .carousel-content .tab-content {
+  section#food-presentation .carousel-content .tab-content.active {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
   }

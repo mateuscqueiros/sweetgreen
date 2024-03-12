@@ -243,12 +243,17 @@ section#food-presentation {
   .carousel-content {
     padding: 1rem;
     .tab-content {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 3rem;
+      display: none;
+      &.active {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3rem;
+      }
       @media (min-width: $breakpoint_md) {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem;
+        &.active {
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 1rem;
+        }
       }
       .food-card {
         position: relative;
